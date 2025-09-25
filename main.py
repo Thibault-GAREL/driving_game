@@ -2,20 +2,19 @@ import pygame
 import sys
 import math
 
-# Initialisation
 pygame.init()
 WIDTH, HEIGHT = 1000, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Voiture avec rebonds sans rotation")
 
-# Couleurs
+
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GRAY = (40, 40, 60)
 BLUE = (0, 0, 255)
 
-# Voiture
+
 car_width, car_height = 40, 20
 car_x, car_y = 100, 100
 car_angle = 0
@@ -24,7 +23,7 @@ max_speed = 5
 acceleration = 0.2
 turn_speed = 4
 
-# Murs
+
 walls = [
     pygame.Rect(50, 50, 700, 10),
     pygame.Rect(50, 540, 700, 10),
@@ -36,7 +35,7 @@ walls = [
     pygame.Rect(600, 150, 10, 300),
 ]
 
-# Checkpoints (x, y, rayon)
+
 checkpoints = [
     (180, 110, 40),  # Départ/arrivée
     (670, 150, 40),
@@ -152,15 +151,15 @@ def main_game_loop():
 
         car_speed, car_angle = handle_input(car_speed, car_angle)
 
-        # Calcul de la nouvelle position
+
         new_x, new_y = update_position(car_x, car_y, car_angle, car_speed)
 
-        # Checkpoints update
+
         current_time = pygame.time.get_ticks() / 1000.0
         check_checkpoints(car_x, car_y, current_time)
 
 
-        # Collision détectée
+
         if check_collision(new_x, new_y):
             if not has_collided:
                 car_speed *= -0.3  # rebond sans tourner
@@ -169,7 +168,7 @@ def main_game_loop():
             car_x, car_y = new_x, new_y
             has_collided = False
 
-        # Affichage
+
         screen.fill(GRAY)
         for wall in walls:
             pygame.draw.rect(screen, WHITE, wall)
@@ -178,7 +177,7 @@ def main_game_loop():
 
         draw_checkpoints()
 
-        # Infos course
+
         font = pygame.font.Font(None, 26)
         lap_text = font.render(f"Tours: {laps_completed}", True, WHITE)
         checkpoint_text = font.render(f"Checkpoint: {current_checkpoint}/{len(checkpoints)-1}", True, WHITE)
