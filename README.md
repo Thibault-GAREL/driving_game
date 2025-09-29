@@ -13,7 +13,7 @@ This project is a **2D driving game** made with Pygame.
 You control a red car on a closed track, avoiding walls, passing checkpoints in order, and trying to beat your **best lap time**.  
 Collisions with walls are handled with a **bounce effect** (the car is pushed back without rotating).  
 
-This project helped me with []() and []() ! I just change the control ZQSD to control by my AI.
+This project helped me with [Driving AI - GA](https://github.com/Thibault-GAREL/AI_driving_genetic_version) and [Driving AI - DQL](https://github.com/Thibault-GAREL/AI_driving_DQN_version) ! I just change the control **ZQSD** to control by my AI.
 
 ---
 
