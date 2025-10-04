@@ -96,4 +96,4 @@ python main.py
 ---
 
 ## 📖 Inspiration / Sources
-😆 100% coded by myself, no tutorials!
+Code created by me 😎, Thibault GAREL - [Github](https://github.com/Thibault-GAREL)
