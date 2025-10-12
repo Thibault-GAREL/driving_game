@@ -23,13 +23,12 @@ max_speed = 5
 acceleration = 0.2
 turn_speed = 4
 
-
 walls = [
     pygame.Rect(50, 50, 700, 10),
     pygame.Rect(50, 540, 700, 10),
     pygame.Rect(50, 50, 10, 500),
     pygame.Rect(740, 50, 10, 500),
-    pygame.Rect(200, 150, 400, 10),
+    pygame.Rect(200, 150, 410, 10),
     pygame.Rect(200, 150, 10, 300),
     pygame.Rect(400, 250, 10, 300),
     pygame.Rect(600, 150, 10, 300),
