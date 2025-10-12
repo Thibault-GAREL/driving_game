@@ -171,7 +171,7 @@ def main_game_loop():
 
         screen.fill(GRAY)
         for wall in walls:
-            pygame.draw.rect(screen, WHITE, wall)
+            pygame.draw.rect(screen, WHITE, wall, border_radius=10)
         draw_sensors(car_x, car_y, car_angle)
         draw_car(car_x, car_y, car_angle)
 
