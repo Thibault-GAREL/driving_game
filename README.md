@@ -6,7 +6,9 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)  
 ![Contributions](https://img.shields.io/badge/contributions-welcome-orange.svg)  
 
----
+<p align="center">
+  <img src="img/Gif_driving_game.gif" alt="Gif_driving_game">
+</p>
 
 ## 📝 Project Description 
 This project is a **2D driving game** made with Pygame.  
