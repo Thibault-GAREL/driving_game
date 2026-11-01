@@ -19,19 +19,6 @@ This project helped me with [Driving AI - GA](https://github.com/Thibault-GAREL/
 
 ---
 
-## ⚙️ Features
-  🚗 Car movement with acceleration, braking, and turning  
-
-  🧱 Walls and **bounce collisions**  
-
-  🎯 Checkpoints with lap validation  
-
-  ⏱ Lap timing with best lap record  
-
-  👁️ Visual sensor rays (blue lines) detecting distances to walls  
-
----
-
 ## Controls
 - **Z** → Accelerate  
 - **S** → Brake / Reverse  
@@ -48,22 +35,13 @@ Here is what the game looks like:
 
 ---
 
-## ⚙️ How it works
+## 🗺️ How it works
 
-  🕹️ The player drives a red car through a circuit defined by walls.  
-
-  🧭 The car must pass checkpoints in order. Completing a lap updates the lap counter and times.  
-
-  💥 When the car collides with a wall, it bounces back without rotation.  
-
-  👁️ Blue rays are sensors showing distance to the nearest wall (useful for AI extension later).  
-
----
-
-## 🗺️ Schema  
-💡 Track layout and checkpoints are hardcoded in the code as rectangles and circles.  
+Track layout and checkpoints are hardcoded in the code as rectangles and circles.  
 
 You can easily **customize the circuit** by editing the `walls` and `checkpoints` lists in `main.py`.
+
+The blue rays are sensors showing the distance to the nearest wall (useful for the AI versions).
 
 ---
 
